@@ -16,10 +16,10 @@ public class Director {
     }
 
     private Student createEngineeringStudent() {
-        return studentBuilder.setAge(2).setName("A").setRollNumber(1).setSubjects().build();
+        return studentBuilder.withAge(2).withName("A").withRollNumber(1).withSubjects().build();
     }
 
     private Student createManagementStudent() {
-        return studentBuilder.setAge(4).setName("B").setRollNumber(2).setSubjects().build();
+        return studentBuilder.withAge(4).withName("B").withRollNumber(2).withSubjects().build();
     }
 }

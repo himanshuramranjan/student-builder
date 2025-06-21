@@ -7,27 +7,27 @@ public abstract class StudentBuilder {
     String motherName;
     List<String> subjects;
 
-    public StudentBuilder setRollNumber(int rollNumber) {
+    public StudentBuilder withRollNumber(int rollNumber) {
         this.rollNumber = rollNumber;
         return this;
     }
 
-    public StudentBuilder setAge(int age) {
+    public StudentBuilder withAge(int age) {
         this.age = age;
         return this;
     }
 
-    public StudentBuilder setName(String name) {
+    public StudentBuilder withName(String name) {
         this.name = name;
         return this;
     }
 
-    public StudentBuilder setMotherName(String motherName) {
+    public StudentBuilder withMotherName(String motherName) {
         this.motherName = motherName;
         return this;
     }
 
-    protected abstract StudentBuilder setSubjects();
+    protected abstract StudentBuilder withSubjects();
 
     public Student build() {
         return new Student(this);
